@@ -1,0 +1,11 @@
+<div class="center-aligned">
+	<div class="receipt">
+		<h3>Locker Number</h3>
+		<h1><%= @locker.display_name %></h1>
+		<br/>
+		* LockerMan *
+	</div>
+	<br/>
+	<button class="no-print btn btn-primary" onclick="window.print()">PRINT RECEIPT</button>
+	<%= link_to "GO HOME", root_path, class: "btn btn-default no-print"%>
+</div>

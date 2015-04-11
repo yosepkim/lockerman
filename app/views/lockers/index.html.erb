@@ -1,0 +1,23 @@
+<h1>Listing lockers</h1>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Locker size</th>
+      <th>Display name</th>
+      <th>Occupied</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lockers.each do |locker| %>
+      <tr>
+        <td><%= locker.locker_size.try(:name) %></td>
+        <td><%= locker.display_name %></td>
+        <td><%= locker.occupied %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= paginate @lockers %>

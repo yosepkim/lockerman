@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  locker_size_id: 1
+  display_name: MyString
+  occupied: false
+
+two:
+  locker_size_id: 1
+  display_name: MyString
+  occupied: false

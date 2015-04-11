@@ -1,0 +1,27 @@
+<div class="center-aligned">
+	<h1>Available Lockers</h1>
+	<h4>* Choose size based on size of customer's bag *</h4>
+	<div class="row">
+		<div class="col-md-4">
+			<h2>SMALL</h2> 
+			<h3><%= @avaliable_small_lockers_count %></h3>
+			<% if @avaliable_small_lockers_count > 0 %>
+				<%= link_to "PICK THIS", reserve_locker_path(locker_size: LockerSize::LOCKER_SIZE_SMALL), method: :PUT, class: "btn btn-lg btn-primary" %>
+			<% end %>
+		</div>
+		<div class="col-md-4">
+			<h2>MEDIUM</h2>
+			<h3><%= @avaliable_medium_lockers_count %></h3>
+			<% if @avaliable_medium_lockers_count > 0 %>
+				<%= link_to "PICK THIS", reserve_locker_path(locker_size: LockerSize::LOCKER_SIZE_MEDIUM), method: :PUT, class: "btn btn-lg btn-warning" %>
+			<% end %>
+		</div>
+		<div class="col-md-4">
+			<h2>LARGE</h2>
+			<h3><%= @avaliable_large_lockers_count %></h3>
+			<% if @avaliable_large_lockers_count > 0 %>
+				<%= link_to "PICK THIS", reserve_locker_path(locker_size: LockerSize::LOCKER_SIZE_LARGE), method: :PUT, class: "btn btn-lg btn-success" %>
+			<% end %>
+		</div>
+	</div>
+</div>

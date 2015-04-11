@@ -1,0 +1,7 @@
+<div class="center-aligned">
+	<h1>Return Locker</h1>
+	<%= form_tag locker_return_path, method: :put do %>
+		Locker Number: <%= text_field_tag :locker_name %>
+		<%= submit_tag "SUBMIT", class: "btn btn-primary" %>
+	<% end %>
+</div>
