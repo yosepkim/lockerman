@@ -8,4 +8,4 @@ $ rake db:migrate
 $ rake db:seed
 ```
 
-A live app is running on [Heroku][http://lockerman.herokuapp.com/]
+A live app is running on [Heroku](http://lockerman.herokuapp.com/).
